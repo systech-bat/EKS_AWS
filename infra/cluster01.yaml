@@ -4,7 +4,7 @@ kind: ClusterConfig
 metadata:
   name: cluster01
   region: eu-central-1
-  version: "1.02"
+  version: "1.25"
 
 vpc:
   cidr: 10.0.0.0/16
