@@ -1,0 +1,20 @@
+apiVersion: eksctl.io/v1alpha5
+kind: ClusterConfig
+
+metadata:
+  name: cluster01
+  region: eu-central-1
+  version: "1.02"
+
+vpc:
+  cidr: 10.0.0.0/16
+  nat:
+    gateway: HighlyAvailable
+nodeGroups:
+  - name: ng-01
+    instanceType: t2.micro
+    desiredCapacity: 3
+    privateNetworking: true
+    volumeSize: 10
+
+availabilityZones: ["eu-central-1a", "eu-central-1b", "eu-central-1c"]
