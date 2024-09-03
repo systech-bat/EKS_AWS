@@ -1,0 +1,3 @@
+baseDomain: bazcorp.link
+ssl:
+  enabled: false
